@@ -6,7 +6,9 @@
   "author": "Henriques Salucamba",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "typeorm": "ts-node-dev --transpile-only node_modules/typeorm/cli.js",
+    "entity": "typeorm entity:create"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
